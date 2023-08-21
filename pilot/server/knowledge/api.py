@@ -30,7 +30,7 @@ router = APIRouter()
 
 
 #embeddings = HuggingFaceEmbeddings(model_name=LLM_MODEL_CONFIG[CFG.EMBEDDING_MODEL])
-embeddings = HuggingFaceEmbeddings(model_name="")
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 knowledge_space_service = KnowledgeService()
 
