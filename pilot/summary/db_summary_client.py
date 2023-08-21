@@ -30,7 +30,8 @@ class DBSummaryClient:
 
         db_summary_client = RdbmsSummary(dbname, db_type)
         embeddings = HuggingFaceEmbeddings(
-            model_name=LLM_MODEL_CONFIG[CFG.EMBEDDING_MODEL]
+            #model_name=LLM_MODEL_CONFIG[CFG.EMBEDDING_MODEL]
+            model_name=CFG.EMBEDDING_MODEL
         )
         vector_store_config = {
             "vector_store_name": dbname + "_summary",
