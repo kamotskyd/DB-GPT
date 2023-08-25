@@ -7,7 +7,7 @@ import nltk
 import torch
 
 ROOT_PATH = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MODEL_PATH = "/dbfs/mnt/cdl-dl-sb/files/model/llm/git"
+MODEL_PATH = "/dbfs/mnt/cdl-dl-np/files/model/llm/git"
 PILOT_PATH = os.path.join(ROOT_PATH, "pilot")
 VECTORE_PATH = os.path.join(PILOT_PATH, "vector_store")
 LOGDIR = os.path.join(ROOT_PATH, "logs")
